@@ -1,4 +1,4 @@
 {% macro avatar(user) %}{% spaceless %}
-    {% set imageSrc = user.customer.avatar ? user.customer.avatar.webPath : '/assets/frontend/img/avatar_2x.png' %}
+    {% set imageSrc = user.customer.avatar ? user.customer.avatar.webPath : '/assets/frontend/img/placeholder.png' %}
     {{ imageSrc }}
 {% endspaceless %}{% endmacro %}

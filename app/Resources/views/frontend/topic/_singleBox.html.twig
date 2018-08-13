@@ -8,7 +8,7 @@
     {% include 'frontend/game_play/_singleBox.html.twig' with {'game_play': topic.gamePlay} %}
 {% else %}
 
-    {% set imageSrc = asset('assets/frontend/img/product-placeholder.png'| imagine_filter('image_box_4')) %}
+    {% set imageSrc = asset('assets/frontend/img/placeholder.png'| imagine_filter('image_box_4')) %}
     {% set path = getPath(topic) %}
 
     <div class="img-box-4-item">

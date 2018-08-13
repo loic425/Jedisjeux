@@ -14,7 +14,7 @@
         {% endset %}
 
         {% set filter = 'thumbnail' %}
-        {% set imageSrc = asset('assets/frontend/img/product-placeholder.png'| imagine_filter(filter)) %}
+        {% set imageSrc = asset('assets/frontend/img/placeholder.png'| imagine_filter(filter)) %}
 
         {% if (article.mainImage) %}
             {% set imageSrc = article.mainImage.webPath | imagine_filter(filter) %}
